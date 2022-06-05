@@ -1,8 +1,7 @@
 default: &default
   adapter: "postgresql"
   encoding: "unicode"
-  database: <%= ENV.fetch("POSTGRES_DB") { "baseapp" } %>
-  username: <%= ENV.fetch("POSTGRES_USER") { "baseapp" } %>
+  username: <%= ENV.fetch("POSTGRES_USER") { "postgres" } %>
   password: <%= ENV.fetch("POSTGRES_PASSWORD") { "password" } %>
   host: <%= ENV.fetch("POSTGRES_HOST") { "postgres" } %>
   port: <%= ENV.fetch("POSTGRES_PORT") { 5432 } %>
